@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion-shop</title>
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" crossorigin src="./assets/index.42fe4937.js"></script>
     <link rel="stylesheet" href="./assets/index.9200432a.css">
   </head>
@@ -142,7 +143,7 @@
         <!-- merge pics -->
         <div class="flex my-10">
           <div>
-            <img
+            <img 
               class="rounded-lg w-96 mt-10 ml-10 relative"
               src="https://cdn.pixabay.com/photo/2020/10/19/21/09/female-5668983__340.jpg"
               alt=""
@@ -182,7 +183,7 @@
       </div>
 
       <!-- Products Heading -->
-      <div class="my-6">
+      <div data-aos="fade-up" class="my-6">
         <h1 class="text-center font-bold text-2xl opacity-90 md:text-3xl">
           Selected
         </h1>
@@ -195,7 +196,7 @@
       <!--End Products Heading -->
 
       <!-- Products image 1  -->
-      <div class="flex flex-wrap mt-4">
+      <div data-aos="fade-up" class="flex flex-wrap mt-4">
         <div class="flex flex-col relative sm:w-1/2 md:w-1/4 lg:h-1/4 px-2">
           <div class="overflow-hidden shadow-md rounded-lg">
             <img
@@ -289,7 +290,7 @@
       <!-- End upper image section -->
 
       <!-- Summer Sale -->
-      <div class="flex flex-col my-10 sm:flex-row-reverse">
+      <div data-aos="fade-up" class="flex flex-col my-10 sm:flex-row-reverse">
         <div class="w-full h-48 sm:h-80 sm:w-1/2 md:w-3/4 lg:h-1/4">
           <img
             class="rounded-t-lg sm:rounded-t-none sm:rounded-r-lg w-full h-full"
@@ -333,11 +334,11 @@
       <!--End Summer Sale -->
 
       <!-- Collections -->
-      <div class="flex justify-center my-8 font-bold text-2xl opacity-90">
+      <div data-aos="flip-left"  class="flex justify-center my-8 font-bold text-2xl opacity-90">
         Collections
       </div>
 
-      <div
+      <div data-aos="flip-left" 
         class="
           flex flex-wrap
           md:justify-start
@@ -630,5 +631,10 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
